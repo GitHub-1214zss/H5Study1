@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>time</title>
+</head>
+<body>
+<!--time元素用于定义时间或日期，可以代表24小时中的某一时间。time元素不会再浏览器中呈现任何特殊效果，但是该元素能以机器可读的方式对日期和时间进行编码，这样，用户能够将生日提醒或其他事件添加到日程表中，搜索引擎也能够生成更智能的搜索结果。
+
+time元素有两个属性：
+
+datetime：用于定义相应的时间或日期。取值为具体时间（例如：14:00）或具体日期（例如2015—09—01），不定义该属性时，由元素的内容给定日期 / 时间。
+
+pubdate：用于定义time元素中的日期/时间是文档（或article元素）的发布日期。取值一般为“pubdate”。-->
+<p>我们早上 <time>8:30</time>上课</p>
+<p>我们早上 <time datetime="8:30" pubdate="pubdate"></time>8:30上课</p>
+<p>今年的<time datetime="2021-10-1">十一</time>我们准备去旅游</p>
+<time datetime="2020-3-3" pubdate="pubdate">本消息发布于2020-3-3</time>
+</body>
+</html>
