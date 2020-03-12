@@ -5,6 +5,24 @@
     <title>VideoStudy</title>
 </head>
 <body>
-<video src="../Video/lesson-0.mp4" controls>ds</video>
+<!--控制器controls 浏览器控制器
+    自动播放autoplay 自动播放 要加muted静音的
+    预加载preload none（不下载视频，节省带宽） metadata （同none 但会下载元数据，加载一点）auto默认值（浏览器根据情况动态决定）
+    loop 循环播放
+    poster 海报 第一帧画面
+    -->
+
+<!--
+<video  src="../Video/lesson-0.mp4" loop controls poster="../images/t1.png" preload="metadata" >测试</video>
+-->
+<video controls>
+    <source src="../Video/lesson-0.mp4" type="video/mp4">
+    <p>对不起</p>
+    <!--type是给浏览器提示能否 加载该类型的数据 否则会加载全部的source 会很费时间-->
+</video>
+
+<!--
+<video src="../Video/lesson-0.mp4" preload="none">什么都没有 没有control 没有可点击的东西 否则加js</video>
+-->
 </body>
 </html>
