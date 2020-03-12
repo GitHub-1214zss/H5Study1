@@ -15,14 +15,18 @@
 <!--
 <video  src="../Video/lesson-0.mp4" loop controls poster="../images/t1.png" preload="metadata" >测试</video>
 -->
-<video controls>
+<!--<video controls>
     <source src="../Video/lesson-0.mp4" type="video/mp4">
     <p>对不起</p>
-    <!--type是给浏览器提示能否 加载该类型的数据 否则会加载全部的source 会很费时间-->
-</video>
+    &lt;!&ndash;type是给浏览器提示能否 加载该类型的数据 否则会加载全部的source 会很费时间&ndash;&gt;
+</video>-->
 
 <!--
 <video src="../Video/lesson-0.mp4" preload="none">什么都没有 没有control 没有可点击的东西 否则加js</video>
 -->
+<video src="../Video/lesson-0.mp4" poster="../images/t1.png" id="v"></video>
+<br>
+<button onclick="document.getElementById('v').play()">播放</button>
+<button onclick="document.getElementById('v').pause()">暂停</button>
 </body>
 </html>
