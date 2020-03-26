@@ -24,9 +24,44 @@
 <!--
 <video src="../Video/lesson-0.mp4" preload="none">什么都没有 没有control 没有可点击的东西 否则加js</video>
 -->
-<video src="../Video/lesson-0.mp4" poster="../images/t1.png" id="v"></video>
+<video src="../Video/lesson-0.mp4" poster="../images/t1.png" id="v" controls></video>
 <br>
 <button onclick="document.getElementById('v').play()">播放</button>
-<button onclick="document.getElementById('v').pause()">暂停</button>
+<button onclick="pause()">暂停</button>
+<button onclick="volumeup()">音量加</button>
+<button onclick="volumedown()">音量减</button>
+<button onclick="muted2()">静音</button>
+<button onclick="f()">视频长度</button>
 </body>
 </html>
+<script>
+    function pause() {
+        document.getElementById('v').pause();
+    }
+    function volumeup() {
+        document.getElementById('v').volume+=0.1;
+    }
+    function volumedown() {
+        document.getElementById('v').volume-=0.1;
+    }
+    function muted1() {
+        document.getElementById('v').volume-=1;/*document.getElementById('v').volume=0;*/
+    }
+    var vimuted = 1;
+    function muted2() {
+        if (vimuted == 1) {
+            vimuted = 0;
+            document.getElementById('v').muted = true;/*document.getElementById('v').volume=0;*/
+        }else if(vimuted==0){
+            vimuted = 1;
+            document.getElementById('v').muted = false;
+        }
+
+    }
+    function f() {
+        alert(document.getElementById('v').duration);
+    }
+
+
+
+</script>

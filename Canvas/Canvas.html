@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+<body>
+<!--画布-->
+<canvas id="canvas" style="width: 500px;height: 500px; border: 2px red solid"></canvas>
+<!--<br>-->
+<!--<canvas  style="width: 700px;height: 50px; border: 1px red solid"></canvas>-->
+
+</body>
+</html>
+<script>
+    /*画笔*/
+    function f() {
+        //let 新的js标准  比var范围小很多 局部变量 缩小变量的范围
+        let canvas = document.getElementById("canvas")//获得画布
+        let context = canvas.getContext('2d');//绘制画笔 参数为2d
+        //绘制直线
+        context.moveTo(100,300);//第一个点
+        context.lineTo(200,400);//第二个点
+        context.strokeStyle = "red";//设置线条颜色
+        context.lineWidth = 5;//设置线条粗细
+        context.stroke();//画线
+
+    }
+</script>
