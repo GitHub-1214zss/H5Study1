@@ -1,4 +1,4 @@
-let db = openDatabase("stuDB", '1', "学生信息管理", 1024 * 1024 * 3);
+let db = openDatabase("ScoreDB", '1', "成绩管理", 1024 * 1024 * 3);
 
 /*创建表*/
 function createTable() {
@@ -6,7 +6,7 @@ function createTable() {
     db.transaction(function (tx) {
         /*执行sql*/
         tx.executeSql(
-            'create table  if not exists stu(id integer primary key, name text) ',
+            'create table  if not exists score(id integer primary key, name text) ',
             [],
             function (tx, rs) {
                 console.info('创建表成功')
@@ -44,8 +44,8 @@ function insert() {
 function select() {
     db.transaction(function (tx3) {
         let content = document.getElementById("content");
-        console.info(content)
-        // let id = document.getElementById("id").value;
+
+        let id = document.getElementById("id").value;
         // let name = document.getElementById("name").value;
         tx3.executeSql(
             'select * from stu',
@@ -53,19 +53,16 @@ function select() {
             function (tx3, rs3) {
                 // console.log('查询结果')
                 let len = rs3.rows.length;
-                let html = ""
+                let html ="";
                 for (let i = 0; i < len; i++) {
                     /*获取数据*/
                     let date = rs3.rows.item(i);
                     let id = date["id"]
                     let name = date["name"]
                     // console.info(id+":"+name)
-                   html += "<tr><td>"+id+"</td><td>"+name+"</td></tr>";
-                    console.info(id+name)
+                    html += "<tr><td>"+id+"</td><td>"+name+"</td></tr>";
                 }
-                /*当心 innerHTML 变成innerText*/
-                content.innerHTML = html
-                console.info(content)
+                content.innerText = html
             },
             function (tx3, error3) {
                 console.info('失败' + error3.message)

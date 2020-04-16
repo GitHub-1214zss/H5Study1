@@ -9,11 +9,11 @@ function createTable() {
             'create table  if not exists stu(id integer primary key, name text) ',
             [],
             function (tx, rs) {
-                console.info('创建表成功')
+                console.info('数据库创建成功')
             },
             /*回滚函数 错误*/
             function (tx, error) {
-                console.info('创建失败' + error.message)
+                console.info('创建数据库失败' + error.message)
 
             })
 
