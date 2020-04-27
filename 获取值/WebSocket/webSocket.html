@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>websocket基础知识</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+</head>
+<body>
+<input type="text" id="input_text">
+<button onclick="sendData()" type="button" class="btn btn-success">发送消息</button>
+<button onclick="closeSocket()" type="button" class="btn btn-primary">关闭连接</button>
+
+</body>
+</html>
+<script>
+    //得到实例
+
+    // let name = document.getElementById(txt).value;
+    let  name = "a";
+    let ws = new WebSocket("ws://localhost:8080/websocket/webskt/"+name)
+    //建立连接时触发
+    ws.onopen = function () {
+        console.log("成功建立连接")
+
+    }
+    ws.onerror = function () {
+        console.log("建立连接出错")
+
+    }
+    //接受服务器消息时触发
+    ws.onmessage = function (message) {
+        console.log(message.data)
+
+    }
+    ws.onclose = function () {
+        console.log("关闭连接")
+
+    }
+    function closeSocket() {
+        // ws.close(); 不带参关闭
+        ws.close(1000,"客户端主动关闭")
+    }
+    function sendData(){
+    //    发送消息
+        let name = document.getElementById("input_text").value;
+        // alert(name.value)
+         ws.send(name)
+    }
+</script>

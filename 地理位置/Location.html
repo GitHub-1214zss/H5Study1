@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地理位置</title>
+
+</head>
+<body>
+<p id="coords"></p>
+<button onclick="clearWatch()">关闭地理位置的获取</button>
+<script>
+    var p = document.getElementById("coords")
+    let watchId;
+    if (navigator.geolocation){
+        //alert('浏览器支持地理位置')
+        /*获取地理位置*/
+        //navigator.geolocation.getCurrentPosition(successCB,errorCB);
+        watchId =navigator.geolocation.watchPosition(successCB,errorCB,
+            {
+                maximumAge:300
+            })
+    }else{
+        alert('浏览器不支持地理位置')
+    }
+    /*成功回调*/
+    function successCB(position) {
+        //alert("成功")
+        let coords = position.coords;
+        let latitude = coords.latitude
+        let longtude = coords.longitude
+        p.innerHTML = latitude+"°经"+longtude+"°纬";
+        console.dir(position)
+    }
+    /*回调失败*/
+    function errorCB(err){
+        alert("失 败")
+        console.dir(err)
+    }
+    function clearWatch() {
+        navigator.geolocation.clearWatch(watchId);
+
+    }
+</script>
+</body>
+</html>
