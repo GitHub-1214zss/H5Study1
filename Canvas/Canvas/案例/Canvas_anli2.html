@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<canvas id="canvas" style="height: 500px;width: 500px; border: 1px solid red"></canvas>
+</body>
+</html>
+<script>
+
+    /*画笔*/
+    //let 新的js标准  比var范围小很多 局部变量 缩小变量的范围
+    let canvas = document.getElementById("canvas");//获得画布
+    //let canvas = document.querySelector("canvas");//获得画布 不获取id 默认找到一个  querySelector("#canvas")同样有效 (".class_name")
+    let context = canvas.getContext('2d');//绘制画笔 参数为2d
+    context.beginPath();  //开始路径 结束路径 begin close
+    context.moveTo(100, 300);//第一个点
+    context.lineTo(200, 400);//第二个点
+
+    context.stroke();//画线
+    context.closePath()
+
+
+</script>

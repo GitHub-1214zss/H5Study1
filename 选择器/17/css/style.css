@@ -1,0 +1,58 @@
+/*通配符选择器*/
+*{
+    /*使用通配符选择器设置页面整体样式*/
+    margin: 0;
+    padding: 0;
+}
+/*id选择器*/
+#mr-content{
+    /*使用id选择器设置样式*/
+    /*长宽高*/
+    width: 1200px;
+    height: 411px;
+    margin: 0 auto;
+    background: #ffd800;
+    border: 1px solid red;
+    text-align: left;
+}
+/*使用标签选择器*/
+h2{
+    width: 1073px;
+    height: 75px;
+    padding: 20px 0 0 125px;
+    color: #8a5223;
+    font-size: 36px;
+    font-weight: bolder;
+
+}
+/*子代选择器*/
+#mr-content>.mr-bottom{
+    width: 1200px;
+    height: 336px;
+}
+/*使用后代选择器*/
+#mr-content .mr-block1 {
+    width: 287px;
+    height: 300px;
+    float: left;
+    margin-left: 10px;
+    background: #fff;
+}
+#mr-content .mr-img{
+    width: 100px;
+    height: 178px;
+    padding: 30px 0 0 82px;
+
+}
+/*使用相邻兄弟选择器*/
+#mr-content .mr-img+p{
+    width: 85px;
+    height: 14px;
+    padding:37px 0 0 24px ;
+    color:#666;
+}
+/*通用兄弟选择器*/
+#mr-content .mr-img+p~div{
+    width: 287px;
+    height: 400px;
+}

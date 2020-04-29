@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <script src="Js/成绩录入.js"></script>
+</head>
+<body>
+<div class="form" autocomplete="off">
+    <fieldset>
+        <legend>创建学生信息表</legend>
+        <div>
+            <button onclick="createTable()"  type="button">创建成绩表</button>
+        </div>
+
+    </fieldset>
+    <fieldset style="margin-top: 50px">
+        <legend>学生信息</legend>
+
+        <label for="id">学生id</label><input type="text" id="id" placeholder="请输入学生id" >
+        <label for="name">姓名</label><input type="text" id="name" placeholder="请输入学生姓名">
+        <label for="class">班级</label><input type="text" id="class" placeholder="班级">
+        <label for="subject">科目</label><input type="text" id="subject" placeholder="科目">
+        <label for="bir">姓名</label><input type="date" id="bir" placeholder="出生日期">
+        <label for="score">姓名</label><input type="number" id="score" placeholder="成绩">
+        <div style="margin-top: 10px">
+            <button onclick="insert()"  type="button">插入</button>
+            <button onclick="select()" type="button">查看</button>
+            <button onclick="update()" type="button">更新</button>
+            <button onclick="del()" type="button">删除</button>
+        </div>
+
+    </fieldset>
+
+    <fieldset style="margin-top: 50px">
+        <legend>学生列表</legend>
+
+        <table border="1">
+            <thead>
+            <th width="150">学生id</th>
+            <th width="150">姓名</th>
+            <th width="150">班级</th>
+            <th width="150">科目</th>
+            <th width="150">出生日期</th>
+            <th width="150">成绩</th>
+            </thead>
+            <tbody id="content">
+            <tr><td>1</td><td>张三</td></tr>
+            <tr><td>2</td><td>王五</td></tr>
+            </tbody>
+        </table>
+
+    </fieldset>
+</div>
+</body>
+</html>

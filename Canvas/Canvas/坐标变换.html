@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转</title>
+</head>
+<body>
+<canvas id="canvas1" width="500px" height="500px" style="border: 1px solid red"></canvas>
+
+</body>
+</html>
+<script>
+    /*获取画布画笔*/
+    let canvas = document.querySelector("#canvas1")
+    let ctx = canvas.getContext("2d");
+    // ctx.strokeRect(5,5,20,20)//正常大小
+    // ctx.scale(2,2)
+    // ctx.strokeRect(5,5,20,20)//放大两倍
+    // ctx.scale(2,2)
+    // ctx.strokeRect(5,5,20,20)//再次放大两倍
+    // ctx.scale(2,2)
+    // ctx.strokeRect(5,5,20,20)//再次放大两倍
+    // ctx.scale(2,2)
+//糖葫芦
+    /*位移 画糖葫芦*/
+    // let  n =20
+    // for(let i = 0;i<n-1;i++){
+    //     ctx.translate(10,10)//位移 向左向下移动的单位长度 允许负值
+    //     ctx.fillRect(0,0,10,10)//绘制填充矩形
+    //
+    // }/*大风车*/
+//大风车
+    // ctx.beginPath()
+    // ctx.translate(300,200)
+    // ctx.strokeRect(0,0,100,50);
+    // ctx.rotate(Math.PI/180*72)
+    // ctx.strokeRect(0,0,100,50);
+    // ctx.rotate(Math.PI/180*72)
+    // ctx.strokeRect(0,0,100,50);
+    // ctx.rotate(Math.PI/180*72)
+    // ctx.strokeRect(0,0,100,50);
+    // ctx.rotate(Math.PI/180*72)
+    // ctx.strokeRect(0,0,100,50);
+    // ctx.rotate(Math.PI/180*72)
+    // ctx.closePath()
+    /*要还原 负值 开始关闭路径无效*/
+//电梯
+    ctx.fillStyle = 'rgba(255,0,0,0.2)'
+    ctx.translate(200,200)
+    var i = 40
+    for (let j = 0;j<=i;j++){
+
+        ctx.fillRect(0,0,100,50)
+        ctx.translate(0,25)
+        ctx.rotate(Math.PI/180*5)
+        ctx.scale(0.9,0.9)
+
+    }
+
+</script>

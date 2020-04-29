@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+</head>
+
+<body style="width: 1000px;height: 1000px;margin: 0 auto">
+<!--画布-->
+<canvas id="canvas" width="500px" height="500px" style="border: 2px red solid"></canvas>
+<br>
+<!--<button onclick="f()">画线</button>-->
+<div class="div1">
+    <p></p>
+</div>
+
+</body>
+</html>
+<script>
+    // function f() {
+    /*画笔*/
+    //let 新的js标准  比var范围小很多 局部变量 缩小变量的范围
+    // let canvas = document.getElementById("canvas");//获得画布
+    let canvas = document.querySelector("canvas");//获得画布 不获取id 默认找到一个  querySelector("#canvas")同样有效 (".class_name")
+    let context = canvas.getContext('2d');//绘制画笔 参数为2d
+    //绘制直线
+    //context.setLineDash([30, 20])//画虚线 【实现长度 ，虚线长度】 context.setLineDash([0])//换回直线
+    context.beginPath();  //开始路径 结束路径 begin close
+    context.moveTo(100, 300);//第一个点
+    context.lineTo(100, 400);//第二个点
+    context.lineTo(400, 400);
+    context.lineTo(100, 300);
+    context.strokeStyle = "red";//设置线条颜色
+    context.lineWidth = 5;//设置线条粗细
+    context.lineCap = "round"//设置线条结束形状 圆角round
+    context.lineJoin = "bevel" //设置线条交叉形状
+    //stroke 前改变样式都可以
+    context.closePath()
+    context.stroke();//画线
+    // context.fill();
+
+    // }
+</script>

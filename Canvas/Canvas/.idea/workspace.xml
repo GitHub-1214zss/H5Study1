@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ffbf493a-e78e-4b84-b69a-d8d317f2fcf3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZEbHtQ4mqkR83z9NLopdFOvbmg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\WebstormProjects\Canvas\Images" />
+      <recent name="D:\Projects\WebstormProjects\Canvas\SvgFile" />
+      <recent name="D:\Projects\WebstormProjects\Canvas\案例" />
+      <recent name="D:\Projects\WebstormProjects\Canvas\Css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\WebstormProjects\Canvas\Css" />
+      <recent name="D:\Projects\WebstormProjects\Canvas\案例" />
+      <recent name="D:\Projects\WebstormProjects\Canvas" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.Svg_Homework.html">
+    <configuration name="Canvas_anli1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Canvas/案例/Canvas_anli1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Canvas.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Canvas/Canvas.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Svg_Homework.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Canvas/Svg_Homework.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Svg.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Canvas/Svg.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="asdas.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Canvas/asdas.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Svg_Homework.html" />
+        <item itemvalue="JavaScript Debug.Svg.html" />
+        <item itemvalue="JavaScript Debug.Canvas.html" />
+        <item itemvalue="JavaScript Debug.asdas.html" />
+        <item itemvalue="JavaScript Debug.Canvas_anli1.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffbf493a-e78e-4b84-b69a-d8d317f2fcf3" name="Default Changelist" comment="" />
+      <created>1584407115593</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584407115593</updated>
+      <workItem from="1584407116702" duration="8136000" />
+      <workItem from="1584585473265" duration="6228000" />
+      <workItem from="1584594295668" duration="529000" />
+      <workItem from="1584664949360" duration="2261000" />
+      <workItem from="1585009484584" duration="7095000" />
+      <workItem from="1585190303855" duration="787000" />
+      <workItem from="1585191617222" duration="4662000" />
+      <workItem from="1585270878320" duration="2622000" />
+      <workItem from="1585614509311" duration="6519000" />
+      <workItem from="1585795501662" duration="304000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585194516543">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="488" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1585194516543" />
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1585795672127">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585795672127" />
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state width="1515" height="261" key="GridCell.Tab.0.center" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state width="1515" height="261" key="GridCell.Tab.0.left" timestamp="1585273502086">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585273502086" />
+    <state width="1515" height="261" key="GridCell.Tab.0.right" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state width="1515" height="261" key="GridCell.Tab.2.bottom" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state width="1515" height="261" key="GridCell.Tab.2.center" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state width="1515" height="261" key="GridCell.Tab.2.left" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state width="1515" height="261" key="GridCell.Tab.2.right" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state width="1515" height="261" key="GridCell.Tab.3.bottom" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state width="1515" height="261" key="GridCell.Tab.3.center" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state width="1515" height="261" key="GridCell.Tab.3.left" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state width="1515" height="261" key="GridCell.Tab.3.right" timestamp="1585273502087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1585273502087" />
+    <state x="272" y="57" key="SettingsEditor" timestamp="1585618190385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="272" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585618190385" />
+    <state x="450" y="112" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1585191718331">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="450" y="112" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1536.824@0.0.1536.824" timestamp="1585191718331" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585191632824">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585191632824" />
+  </component>
+</project>

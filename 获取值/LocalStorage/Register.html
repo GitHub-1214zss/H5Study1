@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <script src="../Js/localStorge2.js"></script>
+    <script src="../Js/QueryInfo.js"></script>
+    <style>
+        body {
+            width: 800px;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        form {
+            margin: 30px auto 0;
+        }
+    </style>
+</head>
+<body>
+<!--<form action="">-->
+<!--    姓名<input type="text">-->
+<!--    Email<input type="email">-->
+<!--    年龄<input type="number">-->
+<!--</form>-->
+<form action="../reg" class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="inputText1">用户名：</label>
+        <div class="col-sm-4">
+            <input id="inputText1" type="text" name="name" class="form-control" placeholder="用户名" value="179000605邹顺水">
+        </div>
+    </div>
+    <!--邮箱-->
+    <div class="form-group">
+        <label for="inputEmail2" class="col-sm-2 control-label">邮箱：</label>
+        <div class="col-sm-4">
+            <input type="email" name="email" class="form-control" id="inputEmail2" placeholder="邮箱" value="123@qq.com">
+        </div>
+    </div>
+    <!--电话号码-->
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="inputNumber3">电话号码：</label>
+        <div class="col-sm-4">
+            <input id="inputNumber3" type="tel" name="number" class="form-control" placeholder="电话号码" value="99999999999">
+        </div>
+    </div>
+    <!--用户名-->
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="inputText4">说明：</label>
+        <div class="col-sm-4">
+            <input id="inputText4" type="text" name="log" class="form-control" placeholder="说明" value="说明一下">
+        </div>
+    </div>
+    <!--保存信息-->
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label for="inputCheckbox4">
+                    <input id="inputCheckbox4" type="checkbox">Remember
+                </label>
+            </div>
+        </div>
+    </div>
+    <!--存入localStorge-->
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="button" class="btn btn-success" onclick="add()">保存</button>
+            <!--            无用<button type="button" class="btn btn-default" onclick="del()"></button>-->
+        </div>
+    </div>
+</form>
+<hr>
+<!--下一个表单 进行查找-->
+<form action="../reg" class="form-horizontal" style="margin-top: 30px">
+    <!--输入用户名进行查找-->
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="findName">用户名：</label>
+        <div class="col-sm-4">
+            <input id="findName" type="text" name="name" class="form-control" placeholder="用户名" value="179000605邹顺水">
+        </div>
+    </div>
+    <!--找寻-->
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="button" class="btn btn-success" onclick="find()">找寻</button>
+        </div>
+    </div>
+</form>
+<div id="result" class="col-sm-4" style="margin-left: 100px"></div>
+</body>
+</html>

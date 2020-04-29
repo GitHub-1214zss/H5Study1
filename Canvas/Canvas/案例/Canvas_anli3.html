@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+</head>
+
+<body style="width: 1000px;height: 1000px;margin: 0 auto">
+<!--画布-->
+<canvas id="canvas" width="500px" height="500px" style="border: 2px red solid"></canvas>
+<br>
+<!--<button onclick="f()">画线</button>-->
+<button onclick="f()">清除</button>
+
+</body>
+</html>
+<script>
+    function f(){
+        context.clearRect(0,0,500,500)
+        context.stroke()
+    }
+    // function f() {
+    /*画笔*/
+    //let 新的js标准  比var范围小很多 局部变量 缩小变量的范围
+    // let canvas = document.getElementById("canvas");//获得画布
+    let canvas = document.querySelector("canvas");//获得画布 不获取id 默认找到一个  querySelector("#canvas")同样有效 (".class_name")
+    let context = canvas.getContext('2d');//绘制画笔 参数为2d
+    //绘制直线
+    //context.setLineDash([30, 20])//画虚线 【实现长度 ，虚线长度】 context.setLineDash([0])//换回直线
+    //起点 宽高
+    //beginpath 互不影响
+    //fillrect 绘制填充矩形但是没有边框 strokerect 仅绘制边框  同时使用fillrect strokerect绘制带边框的矩形
+    context.rect(100, 100, 200, 200)
+    //context.lineWidth = 10
+    context.fillStyle = "red"
+    //context.strokeStyle = "#45d5ff"
+    context.fill()
+    context.stroke()
+
+    context.beginPath()
+    context.fillStyle = "green"
+    context.fillRect(300,300,20,20)
+
+
+</script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas_anli1</title>
+    <link rel="stylesheet" href="Css/reset.css">
+</head>
+<body>
+<canvas style="border: 1px pink solid;width: 500px;height: 500px;"></canvas>
+<div id="div1" style="border: 1px red solid; width: 200px; height: 100px;"></div>
+<div id="div2" style="border: 1px red solid; width: 200px; height: 100px;"></div>
+
+</body>
+</html>
+<script>
+    let canvas = document.querySelector("canvas")
+    let context = canvas.getContext("2d")
+    let div1= document.querySelector("#div1")
+    let div2 = document.querySelector("#div2")
+    canvas.onmousedown = function (e) {
+        context.moveTo(e.clientX-canvas.offsetLeft,e.clientY-canvas.offsetTop)
+        div1.innerHTML = e.clientX-canvas.offsetLeft;
+        div2.innerHTML = e.clientY-canvas.offsetTop;
+        canvas.onmousemove = function (et) {
+            context.lineTo(et.clientX-canvas.offsetLeft,et.clientY-canvas.offsetTop)
+            context.stroke()
+        }
+        canvas.onmouseup = function (e) {
+            canvas.onmousemove = null;
+
+        }
+
+
+    }
+
+
+</script>
