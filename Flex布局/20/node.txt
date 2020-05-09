@@ -1,0 +1,9 @@
+平移
+transform: translateX(40px) translateY(40px);
+/*transform: translate(50%,50%);百分比位移x，y*/
+缩放
+scale（sx，sy）默认只写一个值 2d缩放  0-99缩放 1为界限
+旋转
+transform: rotate(x) 45deg
+倾斜
+transform: skew(x,y)

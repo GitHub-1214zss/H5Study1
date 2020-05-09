@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>带图片的边框</title>
+	<style>
+		#container {
+			width: 790px;
+			margin: 0 auto;
+			border: 41px solid #ccc;
+			border-image-source: url("images/4.png");/*设置边框图片路径*/
+			border-image-slice: 33%;/*设置图片裁剪线 上下左右偏移量*/
+			border-image-outset: 0;
+			border-image-repeat: repeat; /*重复repeat 延展stretch*/
+			
+		}
+		header {
+			width: 790px;
+			height: 130px;
+			background: #3f4857;
+		}
+		
+	</style>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<!-- <img src="pic.png" alt=""> -->
+		<header>
+			<img src="images/logo.png" alt="" id="pic_left">
+			<img src="images/text.png" alt="" id="pic_right">
+		</header>
+		<section>
+			<nav>
+				<ul>
+					<li><a href="#"><span></span>首页</a></li>
+					<li><a href="#"><span></span>新产品</a></li>
+					<li><a href="#"><span></span>服务指南</a></li>
+					<li><a href="#"><span></span>合作伙伴</a></li>
+					<li><a href="#"><span></span>联系我们</a></li>
+				</ul>
+			</nav>
+		</section>
+		<section>
+			<article>
+				<h2>微软公司 简介</h2>
+				<p>微软，是一家总部位于美国的跨国科技公司，是世界PC（Personal Computer，个人计算机）机软件开发的先导，由比尔·盖茨与保罗·艾伦创办于1975年，公司总部设立在华盛顿州的雷德蒙德（Redmond，邻近西雅图），以研发、制造、授权和提供广泛的电脑软件服务业务为主。
+				</p>
+				<p>最为显著和畅销的产品为Microsoft Windows操作系统和Microsoft Office系统软件，目前是全球最大的电脑软件提供商。</p>
+			</article>
+		</section>
+		<footer>
+			Copyright@ 2011 | Designed by us
+			<a href="#/" target="_parent">联系我们</a>
+		</footer>
+	</div>
+</body>
+</html>

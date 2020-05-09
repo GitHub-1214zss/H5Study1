@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{padding:0;margin:0;}
+		.common{
+			height:30px;
+			width:100px;
+			padding:50px;
+	        border: 1px solid red;
+	        margin:20px;
+			background:url(images/bg.jpg) no-repeat;
+		}
+		
+		.img5,.img6,.img7{
+			background:url(images/bg.jpg) repeat;
+			padding:20px;
+			width:100px;
+			border:10px #ccc dashed;
+			margin: 10px;
+		}
+		.img5{
+			background-origin: border-box;
+			background-clip: content-box;
+		}
+		.img6{
+			background-origin: padding-box;
+			background-clip: padding-box;
+		}
+		.img7{
+			background-origin: content-box;
+			background-clip: border-box;
+		}
+	</style>
+</head>
+<body>
+
+	<p class="img5">我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是我是文本我是文本</p>
+	<p class="img6">我是文本我是文我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本</p>
+	<p class="img7">我是文本我是文我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本</p>
+</body>
+</html>

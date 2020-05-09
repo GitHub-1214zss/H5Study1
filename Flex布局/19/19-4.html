@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>爱V猫友情链接</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body, a {
+            color: #666;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        header {
+            /*转化为弹性盒子模型*/
+            display: flex;
+            /*主轴排列方式*/
+            /*justify-content: flex-start
+             flex-end
+             center
+             space-between
+            space-around ;*/
+            justify-content: space-around;
+            /*侧轴排列方式*/
+            /*align-items: flex-start
+            flex-end
+            center
+             stretch
+            baseline*/
+            align-items: center;
+
+        }
+
+        .headRight a {
+            color: #8888a5;
+            text-decoration: none;
+            padding: 0 10px;
+
+        }
+
+        .headRight a:hover {
+            color: #a10000;
+        }
+
+        .headRight .active {
+            color: #ff9620;
+        }
+
+        /*主体部分*/
+        .wrap {
+            background: #71d5ff;
+            padding: 0 10%;
+
+        }
+
+        .mianLeft {
+
+            background: #f5f5f5;
+            border: 1px solid #e5e5e5;
+            text-align: center;
+            min-width: 160px;
+            padding-top: 25px;
+            padding-bottom: 40px;
+        }
+
+        .mianLeft li {
+            height: 36px;
+            line-height: 36px;
+        }
+
+        .mianLeft li:hover {
+            background: #e63a39;
+        }
+
+        .mianLeft li:hover a {
+            color: #fff;
+        }
+
+        .mianRight {
+            background: #fff;
+            padding: 20px;
+        }
+
+        .mianRight h2 {
+            font-size: 30px;
+            font-weight: normal;
+            margin: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .picList {
+            padding: 0 5%;
+
+        }
+
+        .picList li {
+            margin-right: 20px;
+            margin-bottom: 40px;
+            border: 1px solid #e5e5e5;
+        }
+
+        /*底部*/
+        footer {
+            height: 112px;
+        }
+
+        footer ul li {
+            padding: 5px 10px;
+        }
+
+        footer p {
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!--网页头部-->
+<header>
+    <h1 class="headLeft">
+        <a href="#"><img src="images/logo.jpg" alt=""/></a>
+    </h1>
+    <div class="headRight">
+        <a href="#">登录</a>
+        <a href="#" class="active">注册</a>
+    </div>
+</header>
+<!--网页主体-->
+<section class="wrap">
+    <div class="mian">
+        <ul class="mianLeft">
+            <li><a href="#">公司介绍</a></li>
+            <li><a href="#">新闻动态</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">招才纳士</a></li>
+            <li><a href="#">用户协议</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">合作伙伴</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">网站地图</a></li>
+            <li><a href="#">付费协议</a></li>
+            <li><a href="#">使用说明</a></li>
+        </ul>
+        <section class="mianRight">
+            <h2>友情链接</h2>
+            <ul class="picList">
+                <li><a href="#"><img src="images/lk_logo01.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/lk_logo02.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/lk_logo03.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/lk_logo04.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/lk_logo05.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/lk_logo06.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/lk_logo07.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/lk_logo08.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="images/lk_logo09.jpg" alt=""/></a></li>
+            </ul>
+        </section>
+    </div>
+</section>
+<!--网页底部-->
+<footer>
+    <ul>
+        <li><a href="#">公司介绍</a></li>
+        <li><a href="#">新闻动态</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">招商加盟</a></li>
+        <li><a href="#">招商用户</a></li>
+        <li><a href="#">协议合作伙伴</a></li>
+        <li><a href="#">常见问题App</a></li>
+        <li><a href="#">下载网站地图</a></li>
+    </ul>
+    <p>深圳云飞渡网络科技有限公司 版权所有 京ICP备13047874号</p>
+    <p>Coppyright © 2018 iVmall All Rights Reserved</p>
+</footer>
+</body>
+</html>
