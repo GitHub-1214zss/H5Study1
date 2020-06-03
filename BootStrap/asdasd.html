@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>jqueryDOM编程</title>
+
+    <style type="text/css">
+
+        div {border: 1px #000 dashed;padding: 10px;margin-top: 5px;}
+
+        span {background-color: bisque;padding: 5px;}
+
+        p {border: 1px #00f dashed;padding: 5px;}
+
+    </style>
+
+</head>
+
+<body>
+
+<p id="p1" class="p1">p1</p>
+
+<div class="div1">
+
+    <p class="p2">p2</p>
+
+    <span class="span1">span1</span>
+
+    <p class="p3" s="123">p3</p>
+
+    <p class="p4">p4</p>
+
+    <div class="div2" s="456">
+
+        <p class="p5" s="123">p5</p>
+
+    </div>
+
+    <p class="p6">p6</p>
+
+</div>    <!---->
+
+<p class="p7">p7</p>
+
+</body>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script>
+    $("p").css({background:"#ff0"})
+    $(".div2").css({height:"100px",background: "#999"})
+    $(".p5").prependTo($(".p1"));
+    $('[s=123]').mouseenter(function () {
+        $(this).text("hello")
+
+    })
+</script>
+</html>

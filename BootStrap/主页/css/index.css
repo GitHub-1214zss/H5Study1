@@ -1,0 +1,89 @@
+/***********************通用的样式开始***********************/
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+}
+/*引用外部字体*/
+@font-face {
+    font-family: lk;
+    src: url('../fonts/lk.eot') format('embedded-opentype'),
+    url('../fonts/lk.svg') format('svg'),
+    url('../fonts/lk.ttf') format('truetype'),
+    url('../fonts/lk.woff') format('woff');
+}
+[class^="icon-"],
+[class*=" icon-"]{
+    font-family: lk;
+    font-style: normal;
+}
+#about, #hot, #link{
+    padding: 20px 0;
+}
+
+/***********************通用的样式结束***********************/
+
+/***********************头部的样式开始***********************/
+#header .top-bar{
+    height: 40px;
+    line-height: 39px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.top-bar .row>div{
+    border-left:  1px solid #00FFFF;
+}
+.top-bar .row>div:nth-of-type(1){
+    position: relative;
+}
+.top-bar .row>div:nth-of-type(1)>img{
+    position: absolute;
+    top: 35px;
+    right: 50%;
+    transform: translateX(50%);
+    display: none;
+}
+
+
+
+
+/***********************头部的样式结束***********************/
+
+/***********************轮播图焦点图的样式开始***********************/
+
+
+/***********************轮播图焦点图的样式结束***********************/
+
+/***********************关于我们的样式开始***********************/
+
+/***********************关于我们的样式结束***********************/
+
+/***********************产品特色的样式开始***********************/
+#department{
+    /*background-color: #f0f0f0;*/
+    padding: 30px 0;
+}
+
+/***********************产品特色的样式结束***********************/
+
+/***********************热门课程的样式开始***********************/
+
+/***********************热门课程的样式结束***********************/
+
+/***********************友情链接的样式开始***********************/
+
+/***********************友情链接的样式结束***********************/
+
+
+/***********************尾部的样式开始***********************/
+#footer{
+    width: 100%;
+    height: 200px;
+    /*background: url("../imgs/ft_bg.png ") no-repeat center;*/
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    font-size: 16px;
+}
+
+/***********************尾部的样式结束***********************/
+
